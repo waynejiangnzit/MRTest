@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/ClassicTee.css" rel="stylesheet" />
+    <script  src="~/Scripts/ClassTee.js"></script>
+<!--
+    <script>
+        function show(size) {
+            var showedValue = document.getElementById("chosenSize").innerHTML;
+            switch (size) {
+                case "s":
+                    //If already chosen, clear the size and border
+                    if (showedValue == "S") {
+                        document.getElementById("chosenSize").innerHTML = "";
+                        document.getElementById("buttonS").style.border = "1px solid #CCCCCC";
+                    }
+                    else {
+                        document.getElementById("chosenSize").innerHTML = "S";
+                        document.getElementById("buttonS").style.border = "2px solid #222222";
+                        //clear other button border
+                        document.getElementById("buttonM").style.border = "1px solid #CCCCCC";
+                        document.getElementById("buttonL").style.border = "1px solid #CCCCCC";
+                    }
+                    break;
+                case "m":
+                    //If already chosen, clear the size and border
+                    if (showedValue == "M") {
+                        document.getElementById("chosenSize").innerHTML = "";
+                        document.getElementById("buttonM").style.border = "1px solid #CCCCCC";
+                    }
+                    else {
+                        document.getElementById("chosenSize").innerHTML = "M";
+                        document.getElementById("buttonM").style.border = "2px solid #222222";
+                        //clear other button border
+                        document.getElementById("buttonS").style.border = "1px solid #CCCCCC";
+                        document.getElementById("buttonL").style.border = "1px solid #CCCCCC";
+                    }
+                    break;
+                case "l":
+                    //If already chosen, clear the size and border
+                    if (showedValue == "L") {
+                        document.getElementById("chosenSize").innerHTML = "";
+                        document.getElementById("buttonL").style.border = "1px solid #CCCCCC";
+                    }
+                    else {
+                        document.getElementById("chosenSize").innerHTML = "L";
+                        document.getElementById("buttonL").style.border = "2px solid #222222";
+                        //clear other button border
+                        document.getElementById("buttonM").style.border = "1px solid #CCCCCC";
+                        document.getElementById("buttonS").style.border = "1px solid #CCCCCC";
+                    }
+                    break;
+                default:
+                    document.getElementById("chosenSize").innerHTML = "";
+                    document.getElementById("buttonS").style.border = "1px solid #CCCCCC";
+                    document.getElementById("buttonM").style.border = "1px solid #CCCCCC";
+                    document.getElementById("buttonL").style.border = "1px solid #CCCCCC";
+            }
+        };
+
+    </script>
+-->
+
+</head>
+<body>
+    <div id="header">
+        <div id="cart" class="cart" onmousemove="showCart()" onmouseout="hideCart()">
+            My Cart(4)
+
+            <!--mini cart-->
+            <div id="popup" class="popupMenu">
+
+                <!--Order line 1-->
+                <div id="cartContent">
+
+                    <!--Cart Img part-->
+                    <div id="cartPicture">
+                        <img class="cartImg" alt="developer-test" src="https://www.onlinewinkeloutlet.com/wp-content/uploads/2016/03/X71771-600x900.jpg">
+                    </div>
+
+                    <!--Cart Information part-->
+                    <div id="cartInformation">
+
+                        <div id="cartTitle" class="blackFont">
+                            <h5>Classic Tee</h5>
+                        </div>
+
+                        <div id="cartPrice" class="priceNumber blackFont">
+                            <p class="stayInline">1x</p>
+                            <b class="stayInline">$75.00</b>
+                        </div>
+
+                        <div id="cartSize">
+                            <div id="cartSizeIndicate">
+                                <p class="blackFont stayInline">Size:</p>
+                                <p class="blackFont stayInline">S</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--Order line 2-->
+                <div id="cartContent">
+
+                    <!--Cart Img part-->
+                    <div id="cartPicture">
+                        <img class="cartImg" alt="developer-test" src="https://www.onlinewinkeloutlet.com/wp-content/uploads/2016/03/X71771-600x900.jpg">
+                    </div>
+
+                    <!--Cart Information part-->
+                    <div id="cartInformation">
+
+                        <div id="cartTitle" class="blackFont">
+                            <h5>Classic Tee</h5>
+                        </div>
+
+                        <div id="cartPrice" class="priceNumber blackFont">
+                            <p class="stayInline">3x</p>
+                            <b class="stayInline">$75.00</b>
+                        </div>
+
+                        <div id="cartSize">
+                            <div id="cartSizeIndicate">
+                                <p class="blackFont stayInline">Size:</p>
+                                <p class="blackFont stayInline">L</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <div id="content">
+
+            <!--Img part-->
+            <div id="picture">
+                <img class="img" alt="developer-test" src="https://www.onlinewinkeloutlet.com/wp-content/uploads/2016/03/X71771-600x900.jpg">
+            </div>
+
+            <!--Information part-->
+            <div id="information">
+
+                <div id="title" class="titleBorder titleSpace">
+                    <h3>Classic Tee</h3>
+                </div>
+
+                <div id="price" class="titleBorder priceNumber">
+                    <b>$75.00</b>
+                </div>
+
+                <div id="discription" class="lightFont textFormat">
+                    <p>This a simple product details section of a clothing retail site. Your task is to implement it with  your weapon of choice, including but not limited to HTML, CSS and JavaScript. You will be assessed on the completions of the requirements and your general code quality and best coding practices.</p>
+                </div>
+
+                <div id="size" style="height:100px">
+                    <div id="sizeIndicate">
+                        <b class="lightFont stayInline">SIZE</b>
+                        <p class="requiredStar stayInline">*</p>
+                        <b class="stayInline" id="chosenSize"></b>
+                    </div>
+                    <div id="sizeOptions">
+                        <div>
+                         <button id="buttonS" class="sizePicker" type="button" onclick="show('s')">S</button>   
+                        </div>
+                        <div>
+                            <button id="buttonM" class="sizePicker" type="button" onclick="show('m')">M</button>
+                        </div>
+                        <div>
+                            <button id="buttonL" class="sizePicker" type="button" onclick="show('l')">L</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <button id="addToCartButton"  class="addButton" onclick="addToCart()">ADD TO CART</button>
+                    <P id="errorMesg" class="requiredStar"></P>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!--
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+        -->
+</body>
+</html>

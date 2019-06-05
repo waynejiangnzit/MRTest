@@ -1,0 +1,152 @@
+﻿#header {
+    margin: 0px 0px 10px;
+    background-color: #F6F6F7; 
+    color: #888888;
+    height: 30px;
+    padding: 4px 10px 2px 1100px;
+}
+
+.lightFont {
+    color: #888888;
+}
+
+.blackFont {
+    color: #222222;
+}
+
+.textFormat {
+    word-wrap: break-word;
+}
+
+#content {
+    width: 1000px;
+    margin:0 auto;
+    padding: 20px;
+    overflow:hidden;
+}
+
+#cartContent {
+    width: 300px;
+    margin:0 auto;
+    padding: 10px;
+    overflow:hidden;
+}
+
+#picture {
+    width: 380px;
+    height: 600px;
+    float: left;
+}
+
+#cartPicture {
+    width: 90px;
+    height: 120px;
+    float: left;
+}
+
+.img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.cartImg {
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: 20px;
+}
+
+#information {
+    width: 450px;
+    height: 300px;
+    float: right;
+}
+
+#cartInformation {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-right: 40px;
+}
+
+.titleBorder {
+    border-bottom: 1px solid #CCCCCC;
+    color: #222222;
+}
+
+.titleSpace {
+    padding: 0px 0px 15px;
+}
+
+.priceNumber {
+    font: bolder;
+    font-weight: 200;
+    padding: 10px 0px 10px;
+}
+
+.requiredStar {
+    color:  #C90000;
+    font-weight: 600;
+}
+
+.stayInline {
+    display: inline;
+}
+
+.sizePicker {
+    border: 1px solid #CCCCCC;
+    background-color: white;
+    color: #888888;
+    float: left; 
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    margin:5px;
+}
+
+.addButton {
+    border: 2px solid #222222;
+    height: 40px;
+    width: 140px;
+    background-color: white;
+    font-weight: 600;
+}
+
+.addButton:hover {
+    background-color: #222222;
+    color: white;
+    transition: 0.2s;
+
+}
+
+.popupMenu {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    right: 0px;
+    top: 28px;
+    background-color: white;
+}
+
+.cart {
+    position: relative;
+    max-width: 70px;
+    max-height: 30px;
+    height: 30px;
+    margin-top: -3px;
+    padding-top: 3px;
+}
+
+.popupMenu {
+    display: none;
+}
+
+.cart:hover {
+    border: 1px solid #CCCCCC;
+    border-bottom: none;
+    background-color: white;
+}
+
+
